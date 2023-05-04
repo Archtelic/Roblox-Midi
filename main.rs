@@ -2,6 +2,10 @@
 use std::collections::HashMap;
 
 fn main(){
+    let call_key = key_map();
+    println!("{}", call_key.get(&).unwrap());
+}
+fn key_map(){
     let mut keyboard_map = HashMap::new();
     let keyboard = "1234567890qwertyuiopasdfghjklzxcvbnm";
     let mut temp: u8 = 2;
@@ -16,8 +20,6 @@ fn main(){
         }
         temp = temp + 1;
     }
-    for (key,value) in keyboard_map.into_iter(){
-        println!("{} / {}", key, value);
-    }
-    // println!("{}", keyboard_map.get(&38).unwrap())
+    keyboard_map
+
 }
